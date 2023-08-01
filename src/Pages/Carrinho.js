@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import CardCarrinho from "../components/CardCarrinho";
 import { handleHome } from "../Router/cordinator";
 import styled from "styled-components";
-export default function Carrinho(props) {
+export default function Carrinho({carrinho, setCarrinho}) {
   const navigate = useNavigate();
 
   let preçoTotal = 0;
